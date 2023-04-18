@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;DatabaseName=explorer;encrypt=true;trustServerCertificate=true;
+    username: explorer
+    password: explorer
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: false
+        naming:
+          physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  cors:
+    allowed-origins: ${CORS_ALLOWED_ORIGINS:https://localhost:4200}
+
+
