@@ -13,13 +13,11 @@ import java.util.Date;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
 public class RegisteredEntity {
 
-    @Column(name = "user_id")
-    private Long userId;
-
-    @Column(name = "university_id")
-    private Long universityId;
+    @EmbeddedId
+    private RegisteredId registeredId;
 
     @Column(name = "start_date")
     private Date startDate;

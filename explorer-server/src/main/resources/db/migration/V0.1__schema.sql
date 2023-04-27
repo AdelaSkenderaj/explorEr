@@ -74,6 +74,7 @@ CREATE TABLE REGISTERED(
     end_date date,
     faculty_id bigint,
     program_id bigint not null,
+    constraint PK_REGISTERED primary key (user_id, university_id),
     constraint FK_REGISTERED_USER foreign key (user_id) references PERSON(id),
     constraint FK_REGISTERED_UNIVERSITY foreign key (university_id) references UNIVERSITY(id),
     constraint FK_REGISTERED_FACULTY foreign key (faculty_id) references FACULTY(id),
@@ -81,12 +82,14 @@ CREATE TABLE REGISTERED(
 );
 
 CREATE TABLE EXCHANGE(
+    id bigint IDENTITY(1,1) not null,
     user_id bigint not null,
     university_id bigint not null,
     start_date date,
     end_date date,
     faculty_id bigint,
     program_id bigint not null,
+    primary key (id),
     constraint FK_EXCHANGE_USER foreign key (user_id) references PERSON(id),
     constraint FK_EXCHANGE_UNIVERSITY foreign key (university_id) references UNIVERSITY(id),
     constraint FK_EXCHANGE_FACULTY foreign key (faculty_id) references FACULTY(id),
