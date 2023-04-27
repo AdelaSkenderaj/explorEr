@@ -55,4 +55,8 @@ public class CityService {
         }
         return cityRepository.save(ce);
     }
+
+    public List<CityEntity> getCitiesByCountryId(Long countryId) {
+        return cityRepository.findByCountryId(countryId);
+    }
 }

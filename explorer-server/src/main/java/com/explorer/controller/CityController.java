@@ -41,4 +41,9 @@ public class CityController {
         cityService.deleteCityById(id);
         return ok().body(null);
     }
+
+    @GetMapping("/citites/country/{countryId}")
+    public ResponseEntity<List<CityEntity>> getCitiesByCountryId(@PathVariable Long countryId) {
+        return ok(cityService.getCitiesByCountryId(countryId));
+    }
 }
