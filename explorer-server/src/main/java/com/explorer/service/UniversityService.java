@@ -22,9 +22,9 @@ public class UniversityService {
         return universityRepository.findAll();
     }
 
-    public List<UniversityEntity> getUniversitiesByCountryId(Long countryId) {
+    /*public List<UniversityEntity> getUniversitiesByCountryId(Long countryId) {
         return universityRepository.findByCountryId(countryId);
-    }
+    }*/
 
     public UniversityEntity createUniversity(UniversityEntity universityEntity) {
         return universityRepository.save(universityEntity);

@@ -31,8 +31,8 @@ public class UniversityController {
         return ok(universityService.getAllUniversities());
     }
 
-    @GetMapping("/country/{countryId}/universities")
+    /*@GetMapping("/country/{countryId}/universities")
     public ResponseEntity<List<UniversityEntity>> getUniversitiesByCountryId(@PathVariable Long countryId) {
         return ok(universityService.getUniversitiesByCountryId(countryId));
-    }
+    }*/
 }
