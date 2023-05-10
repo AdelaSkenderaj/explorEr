@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Table(name = "UNIVERSITY")
@@ -29,6 +30,15 @@ public class UniversityEntity {
     @Column(name = "password")
     private String password;
 
-    @Column(name = "username")
-    private String username;
+    @Column(name = "email")
+    private String email;
+
+    @Column(name = "funded")
+    private Date funded;
+
+    @Column(name = "imgSrc")
+    private String imgSrc;
+
+    @Column(name = "description")
+    private String description;
 }

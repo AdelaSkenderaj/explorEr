@@ -45,8 +45,8 @@ CREATE TABLE [UNIVERSITY](
     [password] varchar(255),
     [email] varchar(255) unique,
     [funded] date,
-    [imgSrc] varchar,
-    [description] varchar,
+    [imgSrc] varchar(255),
+    [description] varchar(max),
     primary key(id),
     constraint FK_UNIVERSITY_ADDRESS foreign key (address_id) references ADDRESS(id)
 );
@@ -91,8 +91,8 @@ CREATE TABLE [EXCHANGE_PROGRAM](
     [start_date] date not null,
     [end_date] date not null,
     [application_deadline] date not null,
-    [subject] varchar,
-    [description] varchar,
+    [subject] varchar(255),
+    [description] varchar(max),
     primary key (id),
     constraint FK_EXCHANGE_PROGRAM_UNIVERSITY foreign key (host_university_id) references UNIVERSITY(id),
 );
@@ -128,8 +128,9 @@ CREATE TABLE [REVIEW](
     [id] bigint IDENTITY(1,1) not null,
     [user_id] bigint not null,
     [university_id] bigint not null,
-    [comment] varchar,
+    [comment] varchar(500),
     [date_posted] date,
+    [rate] integer NOT NULL CHECK (rate >= 1 AND rate <= 5),
     primary key (id),
     constraint FK_REVIEW_USER foreign key (user_id) references PERSON(id),
     constraint FK_REVIEW_UNIVERSITY foreign key (university_id) references UNIVERSITY(id)
@@ -138,9 +139,9 @@ CREATE TABLE [REVIEW](
 CREATE TABLE [BLOG](
     [id] bigint IDENTITY(1,1) not null,
     [user_id] bigint not null,
-    [subject] varchar not null,
-    [description] varchar not null,
-    [content] varchar not null,
+    [subject] varchar(255) not null,
+    [description] varchar(max) not null,
+    [content] varchar(max) not null,
     [date_posted] date,
     primary key (id),
     constraint BLOG_USER foreign key (user_id) references PERSON(id)
@@ -148,7 +149,7 @@ CREATE TABLE [BLOG](
 
 CREATE TABLE [TAG](
     [id] bigint IDENTITY(1,1) not null,
-    tag varchar,
+    tag varchar(255),
     primary key (id)
 );
 
