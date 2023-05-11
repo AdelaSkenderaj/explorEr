@@ -1,8 +1,11 @@
 @font-face {
   font-family: 'Bebas Neue';
-  src: url("fonts/BebasNeue-Regular.ttf") format('truetype');
+  src: url("../fonts/BebasNeue-Regular.ttf") format('truetype');
 }
-
+@font-face {
+  font-family: 'Inter';
+  src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf") format('truetype');
+}
 
 /* Styles for the search button */
 .search-button {
@@ -49,30 +52,40 @@
   display: flex;
   align-items: center;
   
-  background-image: url("images/map.jpg");
+  background-image: url("../images/registration.svg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  margin-top: 7rem;
-  margin-bottom: 7rem;
+  background-size: contain;
+  background-position: center right;
+  height: 35rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  /*padding-top: 7rem;*/
+  /*padding-bottom: 7rem;*/
 }
 
 .slogan{
-  font-family: 'Bebas Neue', sans-serif;
+  display: flex;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
   font-size: 2rem;
+  justify-content: space-between;
+  
 }
 
 
 
-.cardHolder{
-  margin-bottom: 4rem;
+.cardHolder{ 
+  align-items: center;
 }
 
 .card {
+  display: flex;
   border-radius: 0px;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   font-family: sans-serif;
   align-items: center;
+  height: 22rem;
 }
 
 .card:nth-child(even) {
@@ -84,15 +97,51 @@
 }
 
 .holderDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   width: 80%;
-  height: 90%;
+  height: 100%;
   text-align: center;
   justify-content: center;
 }
 
 .cardText {
-  padding-top: 6%;
+  padding-top: 2.2rem;
 }
+
+/* The scaling is currently broken
+
+.exchProg {
+  background-image: url('../images/students.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.exchProg ul{
+  list-style-type:decimal;
+}
+
+*/
+
+.courseHeader{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-top: 8rem;
+}
+
+.courseHeader h2{
+  margin-bottom: 1.5rem;
+}
+
 
 .uniPicHolder {
   background-color: #dee2e6;
@@ -164,5 +213,6 @@ div.col-md-6 h2 {
 ul {
   list-style: none;
 }
+
 
 
