@@ -53,15 +53,28 @@ section#university-list .university {
     margin-right: 60px;
     margin-bottom: 30px;
 }
+section#university-list .university h6 {
+    margin: 30px 0;
+}
 section#university-list .university img{
     width: 314px;
     height: 248px;
 }
 
-section#university-list .university > ul {
+section#university-list .university  ul {
     list-style-type: none;
-
+    column-count: 2;
 }
+section#university-list .university  ul  li  a {
+    text-decoration: none;
+}
+
+section#university-list .university  ul  li  a:link, section#university-list .university  ul  li  a:visited,
+section#university-list .university  ul  li  a:hover, section#university-list .university  ul  li  a:active{
+    color: #51A2ED;
+}
+
+
 
 
 
