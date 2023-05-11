@@ -142,6 +142,31 @@
   margin-bottom: 1.5rem;
 }
 
+.courseHolder {
+  background-color: #d2d5fc;
+  padding: 5rem 1rem 5rem 1rem;
+  text-align: center;
+  align-items:end;
+  justify-content: space-around;
+}
+
+.courseHolder img{
+  width: 100%; /* Make the image width fill the container */
+  height: auto; /* Preserve the aspect ratio of the image */
+}
+
+.courseHolder div {
+  background-color: #fff;
+}
+
+.courseHolder div div{ /*This here will make the exch info appear on the left side of the container*/
+  text-align: start;
+}
+
+.courseHolder div .courseData{ /*This will overwrite the above statement only for the div .courseData*/
+  display: flex;
+  justify-content: space-between;
+}
 
 .uniPicHolder {
   background-color: #dee2e6;
