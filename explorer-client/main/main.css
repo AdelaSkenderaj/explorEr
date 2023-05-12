@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url("../fonts/Inter-VariableFont_slnt,wght.ttf") format('truetype');
+  src: url("../fonts/Inter-Regular.ttf") format('truetype');
 }
 
 @font-face {
@@ -117,25 +117,45 @@
   padding-top: 2.2rem;
 }
 
-/* The scaling is currently broken
-
-.exchProg {
-  background-image: url('../images/students.svg');
+.exchangeShowcase{
+  background-image: url(../images/university.svg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
+  width: 100vw;
+  height: 100vh;  
+}
 
+.exchangeShowcase .container {
+  padding-top: 9rem;
+}
+
+.exchangeShowcase img{ /*Makes it so the image will scale properly to the parent's container size*/
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.exchangeShowcase h2, .exchangeShowcase div {
+  color: #d9d3da;
+  font-size: 1.3rem;
+}
+
+.exchangeShowcase h2 {
+  font-family: 'InterBold', sans-serif;
+  margin-bottom: 2rem;
+  font-size: 1.4rem !important;
+}
+
+.exchangeShowcase div {
+  font-family: 'Inter', sans-serif;
+}
+
+.exhGeneralInfo{
   display: flex;
-  align-items: center;
-  color: #FFFFFF;
+  justify-content: space-evenly;
+  text-align: center;
 }
 
-.exchProg ul{
-  list-style-type:decimal;
-}
 
-*/
 
 .courseHeader{
   display: flex;
