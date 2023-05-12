@@ -18,6 +18,12 @@
   src: url("../fonts/Inter-Bold.ttf") format('truetype');
 }
 
+@font-face {
+  font-family: 'Poppins-ExtraBold';
+  src: url("../fonts/Poppins-ExtraBold.ttf") format('truetype');
+}
+
+
 /* Styles for the search button */
 .search-button {
   background-color: #727CF5;
@@ -118,15 +124,24 @@
 }
 
 .exchangeShowcase{
-  background-image: url(../images/university.svg);
+  background-image: url(../images/universityFull.svg);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   width: 100vw;
   height: 100vh;  
 }
 
+
+
 .exchangeShowcase .container {
   padding-top: 9rem;
+}
+
+@media screen and (max-width: 768px) {
+  .exchangeShowcase .container {
+    padding-top: 2rem;
+  }
 }
 
 .exchangeShowcase img{ /*Makes it so the image will scale properly to the parent's container size*/
@@ -153,6 +168,26 @@
   display: flex;
   justify-content: space-evenly;
   text-align: center;
+  padding-top: 4rem;
+}
+
+.text-general{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text-general div{
+  font-family: 'Inter';
+  
+}
+
+.text-general h3{
+  font-family: 'Poppins-ExtraBold';
+  font-weight: bold !important;
+  font-size: 3rem;
 }
 
 
@@ -237,16 +272,40 @@
   cursor: pointer; /* Change the cursor on hover */
 }
 
-.uniPicHolder {
-  background-color: #dee2e6;
-  padding: 4rem;
+
+.consultation {
+  background-image: url('../images/consultant.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
 }
 
-.uniInfoHolder {
+.formHolder{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 3rem;
+  justify-content: end;
+}
+
+.formGroupMargin{
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-control{
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  border-radius: 0;
+  min-width: 20px;
+}
+
+.formHolder input[type="submit"] {
+  background-color: #fff;
+  border-color: #727CF5;
+  color: #727CF5;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: -5px;
 }
 
 .blogHolder{
