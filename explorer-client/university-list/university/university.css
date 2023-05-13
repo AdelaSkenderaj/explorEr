@@ -35,6 +35,8 @@ main #banner-1 .url-route > a {
     color: #ffffff;
 }
 
+
+
 /*main #university-banner {
     background-size: cover;
     height: 400px;
@@ -82,11 +84,13 @@ main #university-banner > img {
 
 #university-information div .general-information {
     width: 60%;
+    height: auto;
     margin-right: 3em;
 }
 
 #university-information div  img {
-    height: 450px;
+    width: 40%;
+    height: 25em;
     align-content: center;
 }
 
