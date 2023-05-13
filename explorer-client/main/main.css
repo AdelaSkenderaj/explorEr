@@ -129,12 +129,15 @@
 }
 
 .exchangeShowcase{
+ /*
   background-image: url(../images/universityFull.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   width: 100vw;
   height: 100vh;  
+ */
+ background-color: black;
 }
 
 
@@ -279,12 +282,12 @@
 
 
 .consultation {
-  background-image: url('../images/consultant.png');
+  /*background-image: url('../images/consultant.png');
   background-size: cover;
-  background-repeat: no-repeat;
-  
-  width: 100vw;
-  height: 60vh;
+  background-repeat: no-repeat;*/
+  background-color: black;
+  /*width: 100vw;
+  height: 60vh;*/
 }
 
 .formHolder{
@@ -304,18 +307,18 @@
 }
 
 .formGroupMargin{
-  margin-right: 1rem;
+  margin-right: 0.2rem;
   margin-bottom: 1rem;
 }
 
 .customFormControl {
   width: 100%;
-  padding: 10px;
+  padding: 0.5rem;
   border: none;
   border-bottom: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
-  margin-bottom: 10px;
+  
+  margin-bottom: 1rem;
   background-color: transparent;
   color: white !important;
 }
@@ -323,15 +326,7 @@
 .rowConsult {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -10px;
-  margin-left: -10px;
-}
-
-.colmd6Consult {
-  flex: 0 0 50%;
-  max-width: 50%;
-  padding-right: 10px;
-  padding-left: 10px;
+  justify-content: center;
 }
 
 
@@ -339,13 +334,16 @@
   color: white;
 }
 
-.customFormControl input[type="submit"] {
-  background-color: #fff;
+.formHolder input[type="submit"] {
+  background-color: #727CF5 ;
   border-color: #727CF5;
-  color: #727CF5;
+  color: #fff ;
   font-size: 15px;
   font-weight: 400;
-  margin-bottom: -5px;
+  padding: 1.4rem;
+  width: 100%;
+  border-radius: 50px;
+  align-self: center;
 }
 
 .blogHolder{
