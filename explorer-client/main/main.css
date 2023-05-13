@@ -28,6 +28,11 @@
   src: url("../fonts/Poppins-Regular.ttf") format('truetype');
 }
 
+@font-face {
+  font-family: 'PoppinsBold';
+  src: url("../fonts/Poppins-Bold.ttf") format('truetype');
+}
+
 .logo{
   font-size: 30px;
   color: #494E81;
@@ -46,6 +51,23 @@
   }
   .appendLogo {
     display: inline;
+  }
+  .fullLogo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) { /*Will show the smaller logo once the big one has been collapsed*/
+  .logo{                               /*991 is the threshold value where the big icon collapses*/
+    margin: 0px;
+    margin-left: 10%;
+    float:left;
+  }
+  .appendLogo {
+    display: inline;
+  }
+  .sloganHolder{
+    padding-bottom: 45rem;
   }
 }
 
@@ -88,15 +110,11 @@
 }
 
 .sloganHolder{
-  height: 12em;
   text-align: center;
   display: flex;
   align-items: center;
   
-  background-image: url("../images/registration.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center right;
+
   height: 35rem;
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -104,15 +122,42 @@
   /*padding-bottom: 7rem;*/
 }
 
-.slogan{
-  display: flex;
-  text-align: center;
-  font-family: 'InterSemi', sans-serif;
-  font-size: 2rem;
-  justify-content: space-between;
-  
+
+
+.sloganImgHolder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
+.slogan{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  font-family: 'InterSemi', sans-serif;
+  font-size: 2.5em;
+  padding-bottom: 1rem;
+}
+
+.slogan h2{
+  color: #b5b5b5;
+}
+
+.slogan span{
+  padding: 1rem;
+  color: #929afb
+}
+
+.slogan button{
+  font-size: 0.7em;
+  color: #fff;
+  background-color: #b5b5b5;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 35px;
+}
 
 
 .cardHolder{ 
@@ -152,15 +197,12 @@
 }
 
 .exchangeShowcase{
- /*
-  background-image: url(../images/universityFull.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100vw;
-  height: 100vh;  
- */
- background-color: black;
+
+ background-image: url(../images/universityFull.svg);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ 
 }
 
 
@@ -306,12 +348,10 @@
 
 
 .consultation {
-  /*background-image: url('../images/consultant.png');
+  background-image: url('../images/consultant.png');
   background-size: cover;
-  background-repeat: no-repeat;*/
-  background-color: black;
-  /*width: 100vw;
-  height: 60vh;*/
+  background-repeat: no-repeat;
+  
 }
 
 .formHolder{
@@ -379,26 +419,18 @@
 
 .blogHolder{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly ;
   padding: 10rem 0rem;
-  
 }
 
-.row.blogHolder .col-md-4:last-child {
-  margin-right: 0;
-} 
-
-@media screen and (max-width: 768px) {
-  .row.blogHolder .col-md-4{
-    margin-right: 0rem;
-  }
+.blogText h1{
+font-family: 'PoppinsBold';
+}
+.blogText span{
+font-family: 'Inter';
 }
 
-.blogHolder + div {
-  display: flex;
-  margin-top: 3rem;
-  justify-content: center;
-}
+/**/
 
 .img-container{
   position: relative;
@@ -415,21 +447,24 @@
   position: absolute;
   bottom: -0%;
   left: 0%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #5d50c6;
   color: #ffffff;
   padding: 3%;
   display: flex;
   flex-direction: column;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+
+
 }
 
 .text-overlay h2, .text-overlay p {
   margin: 0;
 }
 
-
-
 .blogText {
   text-align: start;
+  margin-bottom: 1rem;
 }
 
 .blog-button {
@@ -452,15 +487,10 @@
   cursor: pointer; /* Change the cursor on hover */
 }
 
-/*
-@media screen and (max-width: 768px) {
-  .slogan {
-    font-size: 1.5rem;
-  }
-  .blog {
-    margin-bottom: 2rem;
-  }
-}*/
+.blogHolder div.col-md-3 {
+  padding-bottom: 2rem;
+  margin-bottom: 4rem;
+}
 
 footer {
   background-color: #333333;
