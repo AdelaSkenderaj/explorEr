@@ -28,6 +28,12 @@
     src: url("../fonts/Poppins-Regular.ttf") format('truetype');
   }
 
+  @font-face {
+    font-family: 'PoppinsBold';
+    src: url("../fonts/Poppins-Bold.ttf") format('truetype');
+  }
+
+
 header .logo{
     font-size: 30px;
     color: #494E81;
@@ -116,30 +122,35 @@ main .blogListSection .url-route {
     line-height: 33px;
 
     color: #FFFFFF;
+    
 }
 
-main .blogListSectio .url-route > a {
+main .blogListSectio .url-route  a {
     color: #ffffff;
+}    
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #727cf5;
 }
     
 /**/
 
 .blogHolder{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly ;
     padding: 10rem 0rem;
-    
   }
-  
-.row.blogHolder .col-md-4:last-child {
-    margin-right: 0;
-  } 
-  
-.blogHolder + div {
-    display: flex;
-    margin-top: 3rem;
-    justify-content: center;
-  }
+
+.blogText h1{
+  font-family: 'PoppinsBold';
+}
+.blogText span{
+  font-family: 'Inter';
+}
 
 /**/
   
@@ -158,21 +169,24 @@ main .blogListSectio .url-route > a {
     position: absolute;
     bottom: -0%;
     left: 0%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #5d50c6;
     color: #ffffff;
     padding: 3%;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+
   }
   
   .text-overlay h2, .text-overlay p {
     margin: 0;
   }
   
-  
-  
   .blogText {
     text-align: start;
+    margin-bottom: 1rem;
   }
   
   .blog-button {
@@ -194,3 +208,12 @@ main .blogListSectio .url-route > a {
     background-color: #666666; /* Darker gray on hover */
     cursor: pointer; /* Change the cursor on hover */
   }
+
+  div.col-md-3 {
+    padding-bottom: 2rem;
+    margin-bottom: 4rem;
+  }
+
+
+
+  
