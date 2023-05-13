@@ -38,8 +38,8 @@
   display: none;
 }
 
-@media screen and (max-width: 991px) {
-  .logo{
+@media screen and (max-width: 991px) { /*Will show the smaller logo once the big one has been collapsed*/
+  .logo{                               /*991 is the threshold value where the big icon collapses*/
     margin: 0px;
     margin-left: 10%;
     float:left;
