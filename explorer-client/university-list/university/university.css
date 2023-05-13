@@ -1,4 +1,41 @@
-main #university-banner {
+/* Banner-1 styling section */
+main #banner-1 {
+    background-image:
+            linear-gradient(90deg, rgba(114, 124, 245, 0.37) 0.05%, rgba(0, 102, 255, 0.37) 100.05%),
+            url('../../images/students-banner-image.png');
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main #banner-1 > h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 59px;
+    line-height: 88px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+main #banner-1 .url-route {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+
+    color: #FFFFFF;
+}
+
+main #banner-1 .url-route > a {
+    color: #ffffff;
+}
+
+/*main #university-banner {
     background-size: cover;
     height: 400px;
     display: flex;
@@ -33,7 +70,7 @@ main #university-banner > div > p {
 main #university-banner > img {
     height: 250px;
     margin: 40px;
-}
+}*/
 
 #university-information {
     margin: 60px 40px;
