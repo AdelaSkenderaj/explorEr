@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url("fonts/BebasNeue-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'InterBold';
+    src: url("../fonts/Inter-Bold.ttf") format('truetype');
+}
+header .logo{
+    font-size: 30px;
+    color: #494E81;
+    margin: 0 0 -10px 175px;
+}
+header h2{
+    font-size: 27px;
+}
+header .btn.account{
+    background-color: #fff;
+    border-color: #727CF5;
+    color: #727CF5;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: -5px;
+}
+header .btn:hover{
+    background-color: #727CF5;
+    color: #fff;
+}
+/* Styles for the search button */
+header .search-button {
+    background-color: #727CF5;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Styles for the hover and focus states of the search button */
+header .search-button:hover, header .search-button:focus{
+    background-color: #0062cc;
+    color: #fff;
+    outline: none;
+}
+
+header .jst {
+    justify-content: center;
+}
+
+header .headerNav{
+    background-color: #727CF5;
+    padding: 1rem 0rem;
+}
+
+header .navHeaderItem {
+    font-size: larger;
+    color: #DEF6FF;
+    font-family: 'InterBold', sans-serif;
+}
+
+header .searchField{
+    border: #727CF5 solid;
+    border-radius: 5px;
+}

@@ -1,0 +1,178 @@
+footer {
+    background-color: #333333;
+    padding: 4rem 0rem;
+}
+
+footer .form-control{
+    text-align: center;
+    font-size: 22px;
+    background-color: rgb(255, 255, 255, 49%);
+    border: rgb(255, 255, 255, 49%);
+    margin-bottom: 14px;
+    padding: 19px 49px 18px 60px;
+}
+
+footer .list{
+    margin-bottom: 15px;
+}
+
+footer .bi.icon{
+    margin-right: 10px;
+}
+footer .bi-arrow-right-short{
+    float: left;
+    margin-right: 10px;
+}
+footer .rectangle-29 {
+    size: 20%;
+    margin-top: 2px;
+    margin-right: 18px;
+    float: left;
+}
+footer .flex-wrapper-nine {
+    padding: 2px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .flex-wrapper-nine:not(:last-of-type) {
+    margin-right: 87px;
+}
+footer .recent-blog {
+    height: 59.16%;
+    width: 60.1%;
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    margin-bottom: 17px;
+    margin-left: 10px;
+}
+footer .flex-wrapper-eleven {
+    display: flex;
+    align-items: flex-start;
+}
+footer .flex-wrapper-eleven:not(:last-of-type) {
+    margin-bottom: 19.11px;
+}
+footer .icon-calendar {
+    width: 18.72px;
+    height: 21.58px;
+    margin-right: 10px;
+}
+footer .dd-mm-yyyy {
+    height: 78.26%;
+    width: 81.75%;
+    font-family: "Alegreya Sans";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--transparent-white-smoke-2);
+    display: flex;
+    margin-top: 5px;
+}
+footer .icon-user {
+    width: 18.72px;
+    height: 20.59px;
+    margin-right: 10px;
+}
+footer .name {
+    height: 86.17%;
+    width: 26.6%;
+    font-family: "Alegreya Sans";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--transparent-white-smoke-2);
+    display: flex;
+    margin-top: 2.89px;
+    margin-right: 20px;
+}
+footer .comment {
+    width: 10.14%;
+    height: 98.56%;
+    margin-right: 10px;
+}
+footer .comments {
+    height: 86.17%;
+    width: 46.8%;
+    font-family: "Alegreya Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--transparent-white-smoke-2);
+    display: flex;
+    margin-top: 2.89px;
+}
+footer .nav{
+    color: white;
+    text-decoration:none;/*per te hequr ate underline*/
+}
+footer .nav:hover{
+    color:#bf8fff;
+}
+footer .btn.subscribe{
+    background-color: #9747FF;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    line-height: normal;
+    padding: 19px 49px 18px 60px;
+}
+footer .btn:hover.subscribe{
+    background-color: #fff;
+    color: #9747FF;
+}
+footer .btn.twitter{
+    width: 47px;
+    background-color: #55acee;
+    border: none;
+    border-radius: 30px;
+    padding: 0.4em 0.5em 0.4em 0.5em;
+}
+footer .btn:hover.twitter{
+    background-color: white;
+    color: #55acee;
+    box-shadow: 0 0.5em 0.5em -0.4em #55acee;
+}
+footer .btn.facebook{
+    width: 47px;
+    background-color: #3b5998;
+    border: none;
+    border-radius: 30px;
+    padding: 0.4em 0.5em 0.4em 0.5em;
+}
+footer .btn:hover.facebook{
+    background-color: white;
+    color: #3b5998;
+    box-shadow: 0 0.8em 0.7em -0.4em #3b5998;
+}
+footer .btn.instagram{
+    width: 47px;
+    background-color: #ac2bac;
+    border: none;
+    border-radius: 30px;
+    padding: 0.4em 0.5em 0.4em 0.5em;
+}
+footer .btn:hover.instagram{
+    background-color: white;
+    color: #ac2bac;
+    box-shadow: 0 0.7em 0.7em -0.4em #ac2bac;
+}
+
+footer .footer {
+    color: white;
+}
+
+footer div.col-md-6 h2 {
+    margin-bottom: 2rem;
+}
+
+footer ul {
+    list-style: none;
+}
+
