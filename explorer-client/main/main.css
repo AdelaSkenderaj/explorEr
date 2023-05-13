@@ -384,12 +384,6 @@
   
 }
 
-.row.blogHolder .col-md-4 {
-  flex: 1; /*Expand and fill the space evenly*/
-  margin-right: 2rem;
-  margin-bottom: 3rem;
-}
-
 .row.blogHolder .col-md-4:last-child {
   margin-right: 0;
 } 
