@@ -1,0 +1,264 @@
+body{
+    margin: 0;
+}
+
+
+/* Banner-1 styling section */
+main #banner-1 {
+    background-image:
+            linear-gradient(90deg, rgba(114, 124, 245, 0.37) 0.05%, rgba(0, 102, 255, 0.37) 100.05%),
+            url('../../images/students-banner-image.png');
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main #banner-1 > h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 59px;
+    line-height: 88px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+main #banner-1 .url-route {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+
+    color: #FFFFFF;
+}
+
+main #banner-1 .url-route > a {
+    color: #ffffff;
+}
+
+
+/* Banner-2 styling section */
+main #banner-2 {
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #F5F5F5;
+}
+
+main #banner-2 > div > h1{
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 128px;
+    text-align: center;
+
+    color: #616CF5;
+}
+main #banner-2 > div > p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.67);
+}
+
+
+main #banner-2 > img {
+    height: 250px;
+    margin: 40px;
+}
+
+
+/* Program-information */
+#program-information {
+    display: flex;
+    flex-direction: row;
+    background: rgba(151, 158, 237, 0.04);
+    margin: 60px 40px;
+    padding: 60px;
+}
+
+#program-information .left {
+    width: 60%;
+    padding: 20px;
+    margin-right: 30px;
+}
+
+#program-information .left h3 {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: rgba(0, 0, 0, 0.53);
+    margin-bottom: 30px;
+}
+
+#program-information .left p {
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 34px;
+
+    color: #000000;
+}
+
+#program-information .right {
+    width: 40%;
+    padding: 30px;
+}
+
+#program-information .right h3 {
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    color: #787878;
+}
+
+#program-information .right dl {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #000000;
+}
+
+#program-information #payment {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+
+}
+
+#program-information #payment #fees{
+    width: 50%;
+}
+
+#program-information #payment+h3{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#program-information .right ul {
+    list-style-type: none;
+}
+
+#program-information .right ul li {
+    margin-bottom: 10px;
+    margin-left: -30px;
+}
+#program-information .right ul a {
+    text-decoration: none;
+    color:  #000000;
+}
+
+
+/* Reviews styling section */
+#reviews {
+    margin: 60px 40px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(151, 158, 237, 0.04);
+}
+
+#reviews h1 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 86.214px;
+    line-height: 115px;
+
+
+    color: #5966FF;
+}
+
+#reviews #review-list {
+    background: #FFFFFF;
+    padding: 40px;
+}
+
+.review .person-name {
+
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+}
+
+.review .person-comment {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    color: #A49B9B;
+}
+
+#reviews textarea {
+    background: #F5F5F5;
+    width: 960px;
+    height: 320px;
+    border: none;
+    outline: none;
+}
+
+#reviews textarea::placeholder {
+    color: #C6C0C0;
+}
+
+#reviews button[type="submit"] {
+    background: #51A2ED;
+    border-radius: 30px;
+    width: 415px;
+    height: 55px;
+
+
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+    display: block;
+    border: none;
+    margin-top: 16px;
+}
+
+.star-rating {
+    color: #FABF35;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
