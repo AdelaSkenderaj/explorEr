@@ -28,6 +28,29 @@
   src: url("../fonts/Poppins-Regular.ttf") format('truetype');
 }
 
+.logo{
+  font-size: 30px;
+  color: #494E81;
+  margin: 0 0 -10px 175px;
+}
+
+.appendLogo{
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .logo{
+    margin: 0px;
+    margin-left: 10%;
+    float:left;
+  }
+  .appendLogo {
+    display: inline;
+  }
+}
+
+
+
 
 /* Styles for the search button */
 .search-button {

@@ -12,10 +12,13 @@
 </head>
 <body>
   
-    <section>
+<!--
+     <section>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <div class="navbar-brand">My Website</div>
+          <div class="navbar-brand">
+            <p class="logo"><b>explorEr</b></p>
+          </div>
           <ul class="navbar-nav">
             <li class="nav-item">
               <div class="d-flex align-items-center">
@@ -32,14 +35,41 @@
         </div>
       </nav>
     </section>
-      
+--> 
+
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="navbar-brand">
+            <p class="logo"><b>explorEr</b></p>
+            <img src="../icons/logo.png" class="rounded appendLogo" width="40" height="40" style="margin-left: 5%">
+          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <div class="d-flex align-items-center">
+                <a class="nav-link ms-3" href="#">
+                  <button class="btn account" type="button">Log in</button>
+                  <button class="btn account" type="button">Sign Up</button>
+                </a>
+                <form class="d-flex">
+                  <input class="me-2 searchField" placeholder="Search">
+                  <button class="search-button rounded-circle" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+          
     <section>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse headerNav" id="navbarNav">
+          <div class="collapse navbar-collapse jst headerNav" id="navbarNav">
+            <img src="../icons/logo.png" class=" rounded" width="115" height="120" style="margin: -100px 0 0 40px">
             <ul class="navbar-nav flex-grow-1">
               <li class="nav-item flex-grow-1">
                 <a class="nav-link w-100 text-center navHeaderItem" href="#">Home</a>
