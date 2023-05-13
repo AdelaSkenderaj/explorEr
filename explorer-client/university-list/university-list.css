@@ -74,6 +74,12 @@ section#university-list .university  ul  li  a:hover, section#university-list .u
     color: #51A2ED;
 }
 
+main #university-list a{
+    text-decoration: none;
+    color:black;
+}
+
+
 
 
 
