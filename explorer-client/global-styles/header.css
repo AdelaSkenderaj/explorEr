@@ -79,3 +79,29 @@ header .searchField{
         padding: 8px 0px;
     }
 }
+
+.logo{
+    font-size: 30px;
+    color: #494E81;
+    margin: 0 0 -10px 175px;
+}
+
+.appendLogo{
+    display: none;
+    margin-left: 2%;
+  }
+
+@media screen and (max-width: 991px) { /*Will show the smaller logo once the big one has been collapsed*/
+    .logo{                               /*991 is the threshold value where the big icon collapses*/
+      margin: 0px;
+      margin-left: 10%;
+      float:left;
+    }
+
+    .appendLogo {
+      display: inline;
+    }
+    .fullLogo {
+      display: none;
+    }
+  }
