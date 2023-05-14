@@ -60,7 +60,8 @@ main #idea .info h1, main #difficulties h1, main #goal h1{
 }
 
 main #idea img {
-    width: 28%;
+    width: 500px;
+    height: auto;
 }
 
 main #idea .info p, main #difficulties p,  main #goal p{
@@ -110,5 +111,31 @@ main #goal {
 
 main #goal h1 {
     color: black;
+}
+
+@media screen and (max-width: 1300px) {
+    main #idea img, main #difficulties div.img {
+       display: none;
+    }
+
+
+    .info {
+        width: 100%;
+        margin: 20px 50px;
+    }
+
+    main #idea .info h1, main #difficulties h1, main #goal h1 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    main #idea .info p, main #difficulties p,  main #goal p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    main #goal{
+        margin: 5% 10%;
+    }
 }
 
