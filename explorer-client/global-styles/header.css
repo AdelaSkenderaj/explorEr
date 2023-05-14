@@ -17,6 +17,7 @@ header .logo{
     color: #494E81;
     margin: 0 0 -10px 175px;
 }
+
 header h2{
     font-size: 27px;
 }
@@ -56,7 +57,7 @@ header .jst {
 
 header .headerNav{
     background-color: #727CF5;
-    padding: 1rem 0rem;
+    padding: 1rem 0;
 }
 
 header .navHeaderItem {
@@ -76,6 +77,27 @@ header .searchField{
     }
 
     .navbar {
-        padding: 8px 0px;
+        padding: 8px 0;
     }
 }
+
+@media screen and (min-width: 992px) {
+    header .appendLogo {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 991px) { /*Will show the smaller logo once the big one has been collapsed*/
+    .logo{                               /*991 is the threshold value where the big icon collapses*/
+        margin: 0 0 0 10%;
+        display: inline;
+    }
+    .appendLogo {
+        display: inline;
+    }
+    .fullLogo {
+        display: none;
+    }
+}
+
