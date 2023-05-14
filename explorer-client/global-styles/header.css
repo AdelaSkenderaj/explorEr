@@ -28,6 +28,7 @@ header .btn.account{
     font-size: 15px;
     font-weight: 400;
     margin-bottom: -5px;
+    width: 100%;
 }
 header .btn:hover{
     background-color: #727CF5;
