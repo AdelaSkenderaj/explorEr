@@ -1,113 +1,105 @@
-main #university-banner {
+/* Banner-1 styling section */
+main #banner-1 {
+    background-image:
+            linear-gradient(90deg, rgba(114, 124, 245, 0.37) 0.05%, rgba(0, 102, 255, 0.37) 100.05%),
+            url('../../images/students-banner-image.png');
     background-size: cover;
     height: 400px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #F5F5F5;
 }
 
-main #university-banner > div > h1{
-
-    font-family: 'Playfair Display';
+main #banner-1 > h1 {
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 96px;
-    line-height: 128px;
+    font-size: 59px;
+    line-height: 88px;
     text-align: center;
-
-    color: #616CF5;
+    color: #FFFFFF;
 }
-main #university-banner > div > p {
+
+main #banner-1 .url-route {
+    font-family: 'Poppins';
     font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
 
-    color: rgba(0, 0, 0, 0.67);
+    color: #FFFFFF;
 }
 
-
-main #university-banner > img {
-    height: 250px;
-    margin: 40px;
+main #banner-1 .url-route > a {
+    color: #ffffff;
 }
 
-#university-information {
-    margin: 60px 40px;
-    padding: 20px 20px 60px 60px;
+#university-information, #faculty-list {
+    margin: 3.75em 2.5em;
+    padding: 1.25em 1.25em 3.75em 3.75em;
     display: flex;
     flex-direction: column;
     background: rgba(151, 158, 237, 0.04);
+}
+
+#university-information #inf-img {
+    display: flex;
+    flex-direction: row;
 }
 
 #university-information div .general-information {
     width: 60%;
+    height: auto;
     margin-right: 3em;
 }
 
 #university-information div  img {
-    height: 450px;
+    width: 40%;
+    height: 25em;
     align-content: center;
 }
 
-#university-information h3 {
+
+#university-information h3, #faculty-list h3  {
+    font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 1.875em;
     line-height: 44px;
-    margin-bottom: 30px;
+    margin-bottom: 1.87em;
     color: rgba(0, 0, 0, 0.53);
 }
 
 #university-information div .general-information p {
+    font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 1.625em;
     line-height: 35px;
     color: rgba(0, 0, 0, 0.53);
 }
 
-#faculty-list {
-    margin: 60px 40px;
-    padding: 20px 20px 60px 60px;
-    display: flex;
-    flex-direction: column;
-    background: rgba(151, 158, 237, 0.04);
-}
-
 #faculty-list h3 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 44px;
-    margin-bottom: 30px;
-    color: rgba(0, 0, 0, 0.53);
     text-align: center;
 }
 
-#faculty-list p {
+#faculty-list p, #faculty-list li {
+    font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 550;
-    font-size: 28px;
+    font-size: 1.75em;
     line-height: 39px;
-
     color: rgba(114, 124, 245, 0.82);
 }
 
 #faculty-list li {
-    font-style: normal;
-    font-weight: 550;
-    font-size: 28px;
-    line-height: 39px;
     color: #969292;
 }
 
 #reviews {
-    margin: 60px 40px;
-    padding: 50px;
+    margin: 3.75em 2.5em;
+    padding: 3.125em;
     display: flex;
     flex-direction: column;
     background: rgba(151, 158, 237, 0.04);
@@ -118,25 +110,21 @@ main #university-banner > img {
     font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 86.214px;
+    font-size: 5.375em;
     line-height: 115px;
-
-
     color: #5966FF;
 }
 
 #reviews #review-list {
     background: #FFFFFF;
-    padding: 40px;
+    padding: 2.5em;
 }
 
 .review .person-name {
-
     font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
-    line-height: 39px;
+    font-size: 2em;
     color: #000000;
 }
 
@@ -144,7 +132,7 @@ main #university-banner > img {
     font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 2em;
     line-height: 39px;
     color: #A49B9B;
 }
@@ -163,25 +151,83 @@ main #university-banner > img {
 
 #reviews button[type="submit"] {
     background: #51A2ED;
-    border-radius: 30px;
-    width: 415px;
-    height: 55px;
-
-
+    border-radius: 1.875em;
+    width: 12em;
+    height: 1.6em;
     font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2em;
     line-height: 39px;
     color: #FFFFFF;
     display: block;
     border: none;
-    margin-top: 16px;
+    margin-top: 1em;
 }
 
 .star-rating {
     color: #FABF35;
     float: right;
+}
+
+@media screen and (max-width: 990px){
+    #university-information, #faculty-list {
+        margin: 1.75em 0.5em;
+        padding: 0.25em 1.75em;
+    }
+    #university-information #inf-img {
+        flex-direction: column;
+    }
+
+    main #banner-1 .url-route {
+        text-align: center;
+    }
+
+    #university-information div .general-information{
+        width: 100%;
+    }
+
+    #university-information div  img {
+        width: 100%;
+    }
+    #university-information h3, #faculty-list h3 {
+        font-size: 1.5em;
+        line-height: 35px;
+    }
+    #university-information div .general-information p, #faculty-list p, #faculty-list li{
+        font-size: 1.3em;
+        line-height: 30px;
+    }
+
+    #reviews {
+        margin: 1.75em 0.5em;
+        padding: 0.5em;
+    }
+
+    #reviews h1 {
+        font-size: 3em;
+    }
+
+    #reviews #review-list {
+        padding: 1.75em;
+    }
+
+    .review .person-name, .review .person-comment {
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+
+    #reviews textarea {
+        width: 100%;
+    }
+    #reviews button[type="submit"] {
+        width: 100%;
+    }
+
+    main #banner-1 .url-route{
+        font-size: 1em;
+    }
+
 }
 
 
