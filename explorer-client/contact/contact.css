@@ -1,12 +1,96 @@
+.logo{
+  font-size: 30px;
+  color: #494E81;
+  margin: 0 0 -10px 175px;
+}
+.appendLogo{
+  display: none;
+}
+@media screen and (max-width: 991px) { 
+  .logo{                               
+    margin: 0px;
+    margin-left: 10%;
+    float:left;
+  }
+  .appendLogo {
+    display: inline;
+  }
+  .fullLogo {
+    display: none;
+  }
+}
 @font-face {
-    font-family: 'Bebas Neue';
-    src: url("fonts/BebasNeue-Regular.ttf") format('truetype');
-  }
-  .logo{
-    font-size: 30px;
-    color: #494E81;
-    margin: 0 0 -10px 175px;
-  }
+  font-family: 'Bebas Neue';
+  src: url("fonts/BebasNeue-Regular.ttf") format('truetype');
+}
+
+#contact-banner {
+  background-image:
+          linear-gradient(90deg, rgba(114, 124, 245, 0.37) 0.05%, rgba(0, 102, 255, 0.37) 100.05%),
+          url('../images/students-banner-image.png');
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#contact-banner > h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 59px;
+  line-height: 88px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+ #contact-banner .url-route {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+
+  color: #FFFFFF;
+}
+
+ #contact-banner .url-route > a {
+  color: #ffffff;
+}
+#contact-list {
+  margin: 1.8em;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body{
+  background-color: #F5F5F5;
+}
+#nav1{
+  color: #00054B;
+  text-decoration:none;/*per te hequr ate underline*/
+}
+#nav1:hover{
+  color:#bf8fff;
+}
+.btn.contact{
+  background-color: gray;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  line-height: normal;
+  padding: 19px 49px 18px 60px;
+}
+.btn:hover.contact{
+  background-color: #fff;
+  color: gray;
+  border-color: gray;
+}
+
   h2{
     font-size: 27px;
   }
@@ -42,6 +126,9 @@
     color: #fff;
     outline: none;
   }
+  .collapse{
+    width: 10px;
+  }
   
   .jst {
     justify-content: center;
@@ -54,19 +141,19 @@
   
   .navHeaderItem {
     font-size: larger;
-    color: #DEF6FF;
+    color: #fff;
   }
   
   .searchField{
     border: #727CF5 solid;
     border-radius: 5px;
   }
- 
+
   footer {
     background-color: #333333;
     padding: 4rem 0rem;
   }
-  .form-control{
+  .form-control.footer{
     text-align: center;
     font-size: 22px;
     background-color: rgb(255, 255, 255, 49%);
