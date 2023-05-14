@@ -40,7 +40,7 @@ main #university-banner .url-route > a {
 
 
 section#university-list {
-    margin: 30px;
+    margin: 1.8em;
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -48,13 +48,14 @@ section#university-list {
     justify-content: center;
 }
 section#university-list .university {
-    padding: 40px 25px;
+    padding: 2.5em 1.6em;
     background: rgba(217, 217, 217, 0.42);
-    margin-right: 60px;
-    margin-bottom: 30px;
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+    margin-bottom: 1.8em;
 }
 section#university-list .university h6 {
-    margin: 30px 0;
+    margin: 1.8em 0;
 }
 section#university-list .university img{
     width: 314px;
@@ -73,6 +74,12 @@ section#university-list .university  ul  li  a:link, section#university-list .un
 section#university-list .university  ul  li  a:hover, section#university-list .university  ul  li  a:active{
     color: #51A2ED;
 }
+
+main #university-list a{
+    text-decoration: none;
+    color:black;
+}
+
 
 
 
