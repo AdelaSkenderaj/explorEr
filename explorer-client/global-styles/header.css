@@ -39,20 +39,6 @@ header .btn:hover{
     margin-left: 5%;
   }
 
-@media screen and (max-width: 991px) { /*Will show the smaller logo once the big one has been collapsed*/
-    .logo{                               /*991 is the threshold value where the big icon collapses*/
-      margin: 0px;
-      margin-left: 10%;
-      float:left;
-    }
-    .appendLogo {
-      display: inline;
-    }
-    .fullLogo {
-      display: none;
-    }
-  }
-
 /* Styles for the search button */
 header .search-button {
     background-color: #727CF5;
@@ -110,7 +96,7 @@ header .searchField{
 
 @media screen and (max-width: 991px) { /*Will show the smaller logo once the big one has been collapsed*/
     .logo{                               /*991 is the threshold value where the big icon collapses*/
-        margin: 0 0 0 10%;
+        margin: 0 10% 0 10%;
         display: inline;
     }
     .appendLogo {
