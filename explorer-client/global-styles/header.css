@@ -1,17 +1,23 @@
 @font-face {
     font-family: 'Bebas Neue';
-    src: url("fonts/BebasNeue-Regular.ttf") format('truetype');
+    src: url("../fonts/BebasNeue-Regular.ttf") format('truetype');
 }
 
 @font-face {
     font-family: 'InterBold';
     src: url("../fonts/Inter-Bold.ttf") format('truetype');
 }
+
+.navbar, .container-fluid {
+    padding: 0;
+}
+
 header .logo{
     font-size: 30px;
     color: #494E81;
     margin: 0 0 -10px 175px;
 }
+
 header h2{
     font-size: 27px;
 }
@@ -71,7 +77,7 @@ header .jst {
 
 header .headerNav{
     background-color: #727CF5;
-    padding: 1rem 0rem;
+    padding: 1rem 0;
 }
 
 header .navHeaderItem {
@@ -84,3 +90,34 @@ header .searchField{
     border: #727CF5 solid;
     border-radius: 5px;
 }
+
+@media screen and (max-width: 768px) {
+    .container-fluid {
+        padding: 0 12px;
+    }
+
+    .navbar {
+        padding: 8px 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header .appendLogo {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 991px) { /*Will show the smaller logo once the big one has been collapsed*/
+    .logo{                               /*991 is the threshold value where the big icon collapses*/
+        margin: 0 0 0 10%;
+        display: inline;
+    }
+    .appendLogo {
+        display: inline;
+    }
+    .fullLogo {
+        display: none;
+    }
+}
+

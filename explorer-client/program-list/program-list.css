@@ -40,7 +40,7 @@ main #program-banner .url-route > a {
 
 
 section#program-list {
-    margin: 30px;
+    margin: 1.8em;
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -48,13 +48,14 @@ section#program-list {
     justify-content: center;
 }
 section#program-list .program {
-    padding: 40px 25px;
+    padding: 2.5em 1.6em;
     background: rgba(217, 217, 217, 0.42);
-    margin-right: 60px;
-    margin-bottom: 30px;
+    margin-right:  1.5em;
+    margin-left: 1.5em;
+    margin-bottom: 1.8em;
 }
 section#program-list .program h6 {
-    margin: 30px 0;
+    margin: 1.8em 0;
 }
 section#program-list .program img{
     width: 314px;
@@ -72,6 +73,11 @@ section#program-list .program  ul  li  a {
 section#program-list .program  ul  li  a:link, section#program-list .program  ul  li  a:visited,
 section#program-list .program  ul  li  a:hover, section#program-list .program  ul  li  a:active{
     color: #51A2ED;
+}
+
+main #program-list a {
+    text-decoration: none;
+    color:black;
 }
 
 
