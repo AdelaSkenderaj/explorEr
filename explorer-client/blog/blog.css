@@ -82,13 +82,13 @@ color: #727cf5;
   width: 100%;
 }
 
-.tags {
+#tags {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.tags li {
+#tags li {
   display: inline-block;
   background-color: #f8f9fa;
   color: #333;
