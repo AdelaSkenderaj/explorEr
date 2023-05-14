@@ -240,6 +240,11 @@
   
 }
 
+.courseHolder img{
+  width: 314px;
+  height: 248px;
+}
+
 .courseHolder div .courseData{ /*This will overwrite the above statement only for the div .courseData*/
   display: flex;
   justify-content: space-around;
@@ -351,7 +356,8 @@
 }
 
 .blogText h1{
-font-family: 'PoppinsBold';
+padding-top: 1rem;
+font-family: 'PoppinsBold', sans-serif;
 }
 .blogText span{
 font-family: 'Inter';
@@ -363,6 +369,7 @@ font-family: 'Inter';
   position: relative;
   display: inline-block;
   width: 100%; /*Makes the container take the entire width of the parent div*/
+  height: 300px;
 }
 .img-container img{
   width: 100%;
