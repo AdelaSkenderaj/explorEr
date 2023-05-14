@@ -35,45 +35,6 @@ main #banner-1 .url-route > a {
     color: #ffffff;
 }
 
-
-
-/*main #university-banner {
-    background-size: cover;
-    height: 400px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background: #F5F5F5;
-}
-
-main #university-banner > div > h1{
-
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 96px;
-    line-height: 128px;
-    text-align: center;
-
-    color: #616CF5;
-}
-main #university-banner > div > p {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
-
-    color: rgba(0, 0, 0, 0.67);
-}
-
-
-main #university-banner > img {
-    height: 250px;
-    margin: 40px;
-}*/
-
 #university-information, #faculty-list {
     margin: 3.75em 2.5em;
     padding: 1.25em 1.25em 3.75em 3.75em;
@@ -156,7 +117,7 @@ main #university-banner > img {
 
 #reviews #review-list {
     background: #FFFFFF;
-    padding: 2.5em
+    padding: 2.5em;
 }
 
 .review .person-name {
@@ -216,6 +177,10 @@ main #university-banner > img {
     }
     #university-information #inf-img {
         flex-direction: column;
+    }
+
+    main #banner-1 .url-route {
+        text-align: center;
     }
 
     #university-information div .general-information{
