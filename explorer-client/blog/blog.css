@@ -33,6 +33,10 @@
   src: url("../fonts/Poppins-Bold.ttf") format("truetype");
 }
 
+* {
+  font-family: 'Poppins';
+}
+
 .blogTitleSection {
   background-image: linear-gradient(90deg,
       rgba(114, 124, 245, 0.37) 0.05%,
@@ -46,11 +50,17 @@
   align-items: center;
 }
 
+
+main .blogHolder{
+  display: flex;
+  justify-content: space-between;
+}
+
 main .blogTitleSection>h1 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 59px;
+  font-size: 2rem;
   line-height: 88px;
   text-align: center;
   color: #ffffff;
@@ -79,8 +89,17 @@ a:hover {
   color: #727cf5;
 }
 
+#Title, #blogContent{
+  font-family: 'Poppins';
+}
+
 .testImg {
+  margin-top: 6rem;
   width: 100%;
+}
+
+#blogContent {
+  padding: 3rem 0rem;
 }
 
 #tags {
@@ -89,20 +108,74 @@ a:hover {
   margin: 0;
 }
 
+.extras{
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.tagHeader {
+  border-bottom: 5px solid #333;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
 #tags li {
   display: inline-block;
   background-color: #f8f9fa;
   color: #333;
   padding: 5px 10px;
-  margin-right: 10px;
+  margin: 10px;
   border-radius: 8px;
-  border: 2px solid #ffc107;
+  border: 2px solid #727cf5;
+  font-family: 'Inter';
+  width: 50%;
+}
+
+.extras h2{
+  margin-top: 10rem;
+}
+
+.recBlogHolder{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.miniBlogContainer {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  margin-bottom: 2rem;
+}
+
+.miniBlogContainer .imgCont{
+  width: 20%;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.miniBlogContainer .imgCont img{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.miniBlogContainer .textCont{
+  width: 80%;
 }
 
 .author {
   background-color: #f4f4f4;
+  padding: 2rem;
 }
 
 .author img {
+  min-height: 200px;
+  max-height: 300px;
   width: 100%;
 }

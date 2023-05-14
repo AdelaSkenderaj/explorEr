@@ -78,56 +78,95 @@
 
         <section>
             <div class="container-fluid blogTitleSection">
-                <h1>Title of the blog</h1>
+                <h1 id="Title">Title of the blog</h1>
                 <div class="url-route">
                     <a href="">Home</a>
                     <span> &gt;</span>
                     <a href="">Blogs</a>
                     <span> &gt;</span>
-                    <a href="">Blogs</a>
+                    <a href="">Blog</a>
                 </div>
             </div>
         </section>
 
         <section>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2 id="Title"></h2>
-
+            <div class="container">
+                <div class="row blogHolder">
+                    <div class="col-lg-7">
+                       
                         <div id="blogPhoto">
-                            <img class="testImg" src="../images/2studentswalking.png" alt="" />
+                            <img id="blogImg" class="testImg" alt="" />
                         </div>
 
                         <div id="blogContent"></div>
+                        <!--Placed by javascript-->
+                        
 
-                        <div>
-                            <ul id="tags"></ul>
+                    </div>
+
+                    <div class="col-lg-5 extras">
+
+                        <div class="tagHeader">
+                            Tag Cloud
                         </div>
 
-                        <div class="container-fluid author">
-                            <div class="row">
-                                <div class="col-md-3 m-1">
-                                    <img src="../images/womanNotebooks.png" alt="" />
+                        <div>
+                            <ul id="tags"><!--Filled by javascript--></ul>
+                        </div>
+
+                        <div>
+                            
+                            <h2>Recommended Blogs</h2>
+
+                            <div class="recBlogHolder">
+
+                                <div class="miniBlogContainer">
+                                    <div class="imgCont">
+                                        <img src="../images/logo.png" alt="" >
+                                    </div>
+                                    <div class="textCont">"Volunteer and Community Engagement on Erasmus"</div>
                                 </div>
-                                <div class="col-md-7 m-1">
-                                    <h2 id="author">George Washington</h2>
-                                    <span id="authorInfo">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Ducimus itaque, autem necessitatibus voluptate quod
-                                        mollitia delectus aut, sunt placeat nam vero culpa
-                                        sapiente consectetur similique, inventore eos fugit
-                                        cupiditate numquam!
-                                    </span>
+
+                                <div class="miniBlogContainer">
+                                    <div class="imgCont">
+                                        <img src="../images/logo.png" alt="" >
+                                    </div>
+                                    <div class="textCont">"Life After Erasmus: How It Shaped My Future"</div>
                                 </div>
+
+                                <div class="miniBlogContainer">
+                                    <div class="imgCont">
+                                        <img src="../images/logo.png" alt="" >
+                                    </div>
+                                    <div class="textCont">"Budgeting Tips for Erasmus Students"</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="container-fluid author">
+                        <div class="row">
+                            <div class="col-md-3 m-1">
+                                <img id="authorImg" src="../images/womanNotebooks.png" alt="" />
+                            </div>
+                            <div class="col-md-7 m-1">
+                                <h2 id="author">Author not found</h2>
+                                <span id="authorInfo">
+                                    Author not Found
+                                </span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6"></div>
+
                 </div>
             </div>
         </section>
     </main>
+
+
+
     <footer>
         <div class="container footerContainer">
             <div class="row footer">
