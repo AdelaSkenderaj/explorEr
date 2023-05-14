@@ -1,11 +1,27 @@
+.logo{
+  font-size: 30px;
+  color: #494E81;
+  margin: 0 0 -10px 175px;
+}
+.appendLogo{
+  display: none;
+}
+@media screen and (max-width: 991px) { 
+  .logo{                               
+    margin: 0px;
+    margin-left: 10%;
+    float:left;
+  }
+  .appendLogo {
+    display: inline;
+  }
+  .fullLogo {
+    display: none;
+  }
+}
 @font-face {
     font-family: 'Bebas Neue';
     src: url("fonts/BebasNeue-Regular.ttf") format('truetype');
-  }
-  .logo{
-    font-size: 30px;
-    color: #494E81;
-    margin: 0 0 -10px 175px;
   }
   h2{
     font-size: 27px;
