@@ -1,12 +1,17 @@
 @font-face {
     font-family: 'Bebas Neue';
-    src: url("fonts/BebasNeue-Regular.ttf") format('truetype');
+    src: url("../fonts/BebasNeue-Regular.ttf") format('truetype');
 }
 
 @font-face {
     font-family: 'InterBold';
     src: url("../fonts/Inter-Bold.ttf") format('truetype');
 }
+
+.navbar, .container-fluid {
+    padding: 0;
+}
+
 header .logo{
     font-size: 30px;
     color: #494E81;
@@ -63,4 +68,14 @@ header .navHeaderItem {
 header .searchField{
     border: #727CF5 solid;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .container-fluid {
+        padding: 0 12px;
+    }
+
+    .navbar {
+        padding: 8px 0px;
+    }
 }
